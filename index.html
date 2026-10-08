@@ -1,31 +1,780 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7e9d1" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta
+        name="description"
+        content="Discover X-EMPLAR! School of Heroes, a game project developed in collaboration with LSU Digital Media Arts & Engineering and Pennington Biomedical Research Center."
+    />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <title>X-EMPLAR! | School of Heroes</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <meta name="theme-color" content="#fafafa">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Nunito:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-  <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 19</p>
-  <script src="js/main.js"></script>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- =========================================
+         HEADER / NAVIGATION
+    ========================================== -->
+
+    <header class="site-header">
+
+        <a class="brand" href="#home" aria-label="X-EMPLAR home">
+            <span class="brand-mark">
+                X<span>!</span>
+            </span>
+
+            <span class="brand-text">
+                X-EMPLAR
+                <small>SCHOOL OF HEROES</small>
+            </span>
+        </a>
+
+        <button
+            class="mobile-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#about">THE STORY</a>
+            <a href="#heroes">THE HEROES</a>
+            <a href="#gameplay">THE GAME</a>
+            <a href="#mission">OUR MISSION</a>
+        </nav>
+
+        <a href="#team" class="header-sticker">
+            MEET THE TEAM ↗
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- =========================================
+             HERO / HOME SECTION
+        ========================================== -->
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-dots" aria-hidden="true"></div>
+
+            <div class="hero-topline">
+                <span>✳ TOP SECRET: HERO ACADEMY FILE ✳</span>
+                <span>EST. IN IMAGINATION / BUILT WITH PURPOSE</span>
+            </div>
+
+            <div class="hero-inner">
+
+                <div class="hero-copy">
+
+                    <div class="stamp">
+                        WELCOME, HERO!
+                        <span>★</span>
+                    </div>
+
+                    <p class="eyebrow">
+                        YOUR TRAINING BEGINS HERE...
+                    </p>
+
+                    <h1>
+                        <span class="title-x">
+                            X-EMPLAR!
+                        </span>
+
+                        <span class="title-school">
+                            SCHOOL OF
+                            <em>HEROES</em>
+                            <span class="asterisk">✳</span>
+                        </span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A school where becoming a hero means more than
+                        being super. Every choice you make shapes who
+                        you. Welcome to a world where growing stronger
+                        starts from within.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a class="comic-btn primary" href="#about">
+                            OPEN THE CASE FILE
+                            <span>↗</span>
+                        </a>
+
+                        <a class="comic-btn secondary" href="#heroes">
+                            MEET THE HEROES
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                    <p class="tiny-note">
+                        ✎ A GAME IN DEVELOPMENT · LSU DMAE × PENNINGTON
+                    </p>
+
+                </div>
+
+                <!-- HERO CHARACTER CARDS -->
+
+                <div
+                    class="hero-art"
+                    aria-label="Illustrated heroes Beau, Suki, and Cas"
+                >
+
+                    <div class="burst burst-one">✴</div>
+                    <div class="burst burst-two">★</div>
+                    <div class="comic-sound">POW!</div>
+
+                    <div class="hero-card hero-card-blue">
+                        <img
+                            src="assets/cas.png"
+                            alt="Cas, a blue-haired superhero"
+                        />
+                    </div>
+
+                    <div class="hero-card hero-card-red">
+                        <img
+                            src="assets/beau.png"
+                            alt="Beau, a red-haired superhero"
+                        />
+                    </div>
+
+                    <div class="hero-card hero-card-green">
+                        <img
+                            src="assets/suki.png"
+                            alt="Suki, a green-haired superhero"
+                        />
+                    </div>
+
+                    <div class="handwritten-note">
+                        the next generation<br />
+                        of heroes!
+                        <span>↗</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-footer">
+                <span>SCROLL TO EXPLORE ↓</span>
+                <span>ISSUE NO. 001 / THE BEGINNING</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SCROLLING MARQUEE
+        ========================================== -->
+
+        <div class="marquee" aria-label="Calling all heroes">
+
+            <div class="marquee-track" aria-hidden="true">
+                ★ CALLING ALL HEROES
+                ★ DISCOVER YOUR POWER
+                ★ LEVEL UP YOUR LIFE
+                ★ CALLING ALL HEROES
+                ★ DISCOVER YOUR POWER
+                ★ LEVEL UP YOUR LIFE ★&nbsp;
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             STORY / ABOUT SECTION
+        ========================================== -->
+
+        <section class="section story-section" id="about">
+
+            <div class="section-head">
+                <span class="chapter">
+                    FILE 001 / THE STORY
+                </span>
+
+            </div>
+
+            <div class="story-grid">
+
+                <div class="story-left">
+
+                    <h2>
+                        SO, WHAT'S<br />
+                        <span>THE STORY?</span>
+                    </h2>
+
+                    <div class="speech-bubble">
+                        There's something strange going on...
+                        <span>✦</span>
+                    </div>
+
+                    <p>
+                        Welcome to
+                        <strong>X-EMPLAR! School of Heroes</strong>,
+                        a school where becoming a true hero means mastering
+                        the five pillars of health: <strong>nutrition, exercise, 
+                          wellbeing, sleep, and social
+                        </strong>!
+                   
+                    </p>
+
+                    <p>
+                        But something strange has been happening around campus. 
+                        Food is coming alive, 
+                        rooms are getting closed off, teachers are disappearing, 
+                        and it’s up to the heroes-in-training to figure it out.
+                    </p>
+
+
+                    <p>
+                        To level up your health and heroism, you must explore, 
+                        play minigames, and make connections to reveal the truth!
+                    </p>
+
+                    <a href="#gameplay" class="text-link">
+                        PEEK INSIDE THE GAME ↗
+                    </a>
+
+                </div>
+
+                <div class="story-right">
+
+                    <div class="tape tape-left"></div>
+
+                    <div class="photo-caption">
+                        EVIDENCE #001 — HERO SELECTION
+                    </div>
+
+                    <img
+                        src=""
+                        alt=""
+                    />
+
+                    <div class="polaroid-footer">
+                        CHOOSE YOUR HERO!
+                        <span>♡ ★ ♡</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HERO ROSTER SECTION
+        ========================================== -->
+
+        <section class="section roster-section" id="heroes">
+
+            <div class="section-head">
+
+                <span class="chapter">
+                    FILE 002 / THE ROSTER
+                </span>
+
+                <span class="section-scribble">
+                    ★ Everybody's a hero.
+                </span>
+
+            </div>
+
+            <div class="roster-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        INTRODUCING THE CREW
+                    </p>
+
+                    <h2>
+                        MEET YOUR
+                        <span>HEROES!</span>
+                    </h2>
+                </div>
+
+                <p>
+                    character blip
+                </p>
+
+            </div>
+
+            <div class="character-layout">
+
+                <!-- CHARACTER SELECTION BUTTONS -->
+
+                <div
+                    class="character-selector"
+                    role="group"
+                    aria-label="Select a hero"
+                >
+
+                    <button
+                        class="character-tab active"
+                        data-hero="beau"
+                        aria-pressed="true"
+                    >
+                        <span class="tab-star">★</span>
+                        BEAU
+                    </button>
+
+                    <button
+                        class="character-tab"
+                        data-hero="suki"
+                        aria-pressed="false"
+                    >
+                        <span class="tab-star">★</span>
+                        SUKI
+                    </button>
+
+                    <button
+                        class="character-tab"
+                        data-hero="cas"
+                        aria-pressed="false"
+                    >
+                        <span class="tab-star">★</span>
+                        CAS
+                    </button>
+
+                </div>
+
+                <!-- CHARACTER PROFILE -->
+
+                <div class="character-profile" id="characterProfile">
+
+                    <div class="profile-visual" id="profileVisual">
+
+                        <span class="profile-halftone"></span>
+
+                        <img
+                            id="profileImage"
+                            src="assets/beau.png"
+                            alt="Beau superhero illustration"
+                        />
+
+                        <span class="profile-sticker">
+                            HERO<br />
+                            FILE!
+                        </span>
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span class="file-number">
+                            STUDENT PROFILE / 001
+                        </span>
+
+                        <h3 id="profileName">
+                            BEAU
+                        </h3>
+
+                        <div class="profile-divider"></div>
+
+                        <p id="profileDescription">
+                            CHARACTER PERSONALITY :O
+                        </p>
+
+                        <div class="profile-meta">
+                            <span>STATUS</span>
+                            <strong>READY FOR ADVENTURE ✓</strong>
+                        </div>
+
+                        <span class="profile-doodle">
+                            ✳ ✳ ✳
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             GAMEPLAY SECTION
+        ========================================== -->
+
+        <section class="section gameplay-section" id="gameplay">
+
+            <div class="section-head">
+
+                <span class="chapter">
+                    FILE 003 / INSIDE THE GAME
+                </span>
+
+                <span class="section-scribble">
+                    ↘ Take a closer look!
+                </span>
+
+            </div>
+
+            <div class="gameplay-heading">
+
+                <h2>
+                    MORE THAN
+                    <span>A GAME.</span>
+                </h2>
+
+                <p>
+                    Explore the world, discover challenges,
+                    and follow your own hero journey.
+                </p>
+
+            </div>
+
+            <div class="gameplay-grid">
+
+                <!-- GAMEPLAY CARD 1 -->
+
+                <article class="game-tile game-tile-one">
+
+                    <div class="tile-top">
+                        <span>01 / CHARACTER SELECT</span>
+                        <span>✳</span>
+                    </div>
+
+                    <img src="" alt="" />
+
+                    <h3>CHOOSE YOUR HERO</h3>
+
+                    <p>
+                        Get to know the colorful cast of X-EMPLAR.
+                    </p>
+
+                </article>
+
+                <!-- GAMEPLAY CARD 2 -->
+
+                <article class="game-tile game-tile-two">
+
+                    <div class="tile-top">
+                        <span>02 / JOURNAL</span>
+                        <span>✎</span>
+                    </div>
+
+                    <div class="journal-image">
+                        <img src="" alt="" />
+                    </div>
+
+                    <h3>REFLECT & GROW</h3>
+
+                    <p>
+                        Make space to reflect on your day
+                        and your journey.
+                    </p>
+
+                </article>
+
+                <!-- GAMEPLAY CARD 3 -->
+
+                <article class="game-tile game-tile-three">
+
+                    <div class="tile-top">
+                        <span>03 / PLAYER TOOLS</span>
+                        <span>★</span>
+                    </div>
+
+                    <div class="journal-image wide">
+
+                        <img
+                            src=""
+                            alt=""
+                        />
+
+                    </div>
+
+                    <h3>EXPLORE YOUR JOURNAL</h3>
+
+                    <p>
+                        Keep track of progress, maps,
+                        clues, and more.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             MISSION SECTION
+        ========================================== -->
+
+        <section class="section mission-section" id="mission">
+
+            <div class="section-head">
+
+                <span class="chapter">
+                    FILE 004 / THE BIG IDEA
+                </span>
+
+                <span class="section-scribble">
+                    ✦ Superpowers start small.
+                </span>
+
+            </div>
+
+            <div class="mission-layout">
+
+                <div>
+
+                    <span class="mission-badge">
+                        OUR MISSION ★
+                    </span>
+
+                    <h2>
+                        BUILDING<br />
+                        EVERYDAY
+                        <span>HEROES.</span>
+                    </h2>
+
+                    <p>
+                        X-EMPLAR explores five interconnected
+                        pillars of health through playful,
+                        interactive experiences. The goal is
+                        to make learning about wellbeing feel
+                        like an adventure.
+                    </p>
+
+                    <p class="mission-disclaimer">
+                        The descriptions here are an introductory
+                        overview and can be updated as the
+                        project evolves.
+                    </p>
+
+                </div>
+
+                <!-- FIVE PILLARS -->
+
+                <div class="pillars">
+
+                    <div class="pillar">
+
+                        <span class="pillar-icon">✿</span>
+
+                        <div>
+                            <strong>NUTRITION</strong>
+                            <small>Fuel your adventure</small>
+                        </div>
+
+                        <span>01</span>
+
+                    </div>
+
+                    <div class="pillar">
+
+                        <span class="pillar-icon">↗</span>
+
+                        <div>
+                            <strong>MOVEMENT</strong>
+                            <small>Find your energy</small>
+                        </div>
+
+                        <span>02</span>
+
+                    </div>
+
+                    <div class="pillar">
+
+                        <span class="pillar-icon">☾</span>
+
+                        <div>
+                            <strong>SLEEP</strong>
+                            <small>Rest and recharge</small>
+                        </div>
+
+                        <span>03</span>
+
+                    </div>
+
+                    <div class="pillar">
+
+                        <span class="pillar-icon">♡</span>
+
+                        <div>
+                            <strong>WELLBEING</strong>
+                            <small>Care for your mind</small>
+                        </div>
+
+                        <span>04</span>
+
+                    </div>
+
+                    <div class="pillar">
+
+                        <span class="pillar-icon">☻</span>
+
+                        <div>
+                            <strong>CONNECTION</strong>
+                            <small>Grow together</small>
+                        </div>
+
+                        <span>05</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TEAM / COLLABORATION SECTION
+        ========================================== -->
+
+        <section class="section team-section" id="team">
+
+            <div class="section-head">
+
+                <span class="chapter">
+                    FILE 005 / BEHIND THE SCENES
+                </span>
+
+                <span class="section-scribble">
+                    Made by real humans!
+                </span>
+
+            </div>
+
+            <div class="team-window">
+
+                <div class="window-bar">
+
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span>
+                        X-EMPLAR / PROJECT_INFORMATION.txt
+                    </span>
+
+                    <span>□ ×</span>
+
+                </div>
+
+                <div class="window-content">
+
+                    <div class="window-icon">
+                        ✳
+                    </div>
+
+                    <div>
+
+                        <span class="eyebrow">
+                            THE PEOPLE BEHIND THE PROJECT
+                        </span>
+
+                        <h2>
+                            CREATED THROUGH
+                            <span>COLLABORATION.</span>
+                        </h2>
+
+                        <p>
+                            X-EMPLAR! School of Heroes is a
+                            collaborative game project associated
+                            with
+                            <strong>
+                                Louisiana State University's
+                                Digital Media Arts & Engineering
+                                program
+                            </strong>
+                            and
+                            <strong>
+                                Pennington Biomedical Research Center
+                            </strong>.
+                        </p>
+
+                        <p>
+                            This space can grow into a home for
+                            team introductions, development
+                            milestones, concept art, and
+                            project updates.
+                        </p>
+
+                        <div class="partner-tags">
+
+                            <span>LSU · DMAE</span>
+                            <span>PENNINGTON BIOMEDICAL</span>
+                            <span>GAME DEVELOPMENT</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            X-EMPLAR<span>!</span>
+        </div>
+
+        <p>
+            SCHOOL OF HEROES · A GAME IN DEVELOPMENT
+        </p>
+
+        <div class="footer-bottom">
+
+            <span>
+                
+            </span>
+
+            <a href="#home">
+                BACK TO TOP ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+    <button
+        class="back-top"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+        ↑
+    </button>
+
 </body>
 
 </html>
